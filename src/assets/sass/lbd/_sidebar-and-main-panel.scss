@@ -270,8 +270,9 @@
     }
 }
 
-
+.sidebar,
 .main-panel,
+.sidebar-wrapper,
 .navbar-cmp-fixed .navbar{
     -webkit-transition-property: top,bottom,width;
     transition-property: top,bottom, width;
@@ -285,5 +286,4 @@
 .main-panel{
     max-height: 100%;
     height: 100%;
-    width: 100%;
 }
