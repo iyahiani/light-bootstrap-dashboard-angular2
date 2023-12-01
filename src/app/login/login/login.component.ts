@@ -1,7 +1,7 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {Subscription} from "rxjs";
 import {Router} from "@angular/router";
-import {SocialAuthService} from "@abacritt/angularx-social-login";
+import {FacebookLoginProvider, SocialAuthService} from "@abacritt/angularx-social-login";
 import {StorageService} from "./storage.service";
 
 @Component({
@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 
   googleSignin(googleWrapper: any) {
     //googleWrapper.click();
