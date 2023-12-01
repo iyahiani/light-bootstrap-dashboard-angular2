@@ -21,6 +21,7 @@ import {
   SocialLoginModule
 } from "@abacritt/angularx-social-login";
 import { GoogleSigninButtonComponent } from './login/login/googleAuthent/google-signin-button/google-signin-button.component';
+import {FacebookAuthentComponent} from "./login/login/facbook-authent/facbook-authent.component";
 
 @NgModule({
   imports: [
@@ -39,7 +40,8 @@ import { GoogleSigninButtonComponent } from './login/login/googleAuthent/google-
     AdminLayoutComponent,
     LoginComponent,
     RegisterComponent,
-    GoogleSigninButtonComponent
+    GoogleSigninButtonComponent,
+    FacebookAuthentComponent
   ],
   providers: [
     {
