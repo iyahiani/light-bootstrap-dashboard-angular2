@@ -50,6 +50,7 @@ import {FacebookAuthentComponent} from "./login/login/facbook-authent/facbook-au
         autoLogin: false,
         providers: [
           {
+
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
                 '338669335569-a7ccu9o6d0s697ieekudq6a49h33ehe9.apps.googleusercontent.com'
@@ -57,7 +58,7 @@ import {FacebookAuthentComponent} from "./login/login/facbook-authent/facbook-au
           },
           {
             id: FacebookLoginProvider.PROVIDER_ID,
-            provider: new FacebookLoginProvider('clientId')
+            provider: new FacebookLoginProvider('309982078525077')
           }
         ],
         onError: (err) => {
