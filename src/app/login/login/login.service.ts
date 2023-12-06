@@ -32,7 +32,7 @@ export class LoginService {
         .subscribe((user) => {
           // get return url from query parameters or default to home page
             console.log(user)
-          const returnUrl = this.route.snapshot.queryParams[''] || '/';
+          const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
           this.router.navigateByUrl(returnUrl);
         });
   }
@@ -41,10 +41,11 @@ export class LoginService {
     return from(new Promise<any>(resolve => FB.login(resolve)))
         .pipe(concatMap(({ authResponse }) => {
           if (!authResponse) return EMPTY;
+            console.log(authResponse);
           return of(authResponse.accessToken);
         }));
   }
-    apiAuthenticate(accessToken: string) {
+    /*apiAuthenticate(accessToken: string) {
         // authenticate with the api using a facebook access token,
         // on success the api returns an account object with a JWT auth token
         return this.http.post<any>(`${baseUrl}/api`, { accessToken })
@@ -52,6 +53,6 @@ export class LoginService {
                 this.accountSubject.next(account);
                 return account;
             }));
-    }
+    }*/
 
 }
